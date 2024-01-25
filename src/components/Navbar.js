@@ -29,7 +29,7 @@ const Navbar = () => {
               </li>
               
               <li className="nav-item">
-                <NavLink to="/missions" className="nav-link" onClick={()=>{setShow(false)}}>About Us</NavLink>
+                <NavLink to="/about-us" className="nav-link" onClick={()=>{setShow(false)}}>About Us</NavLink>
               </li>
               
               <li className="nav-item">
@@ -43,7 +43,7 @@ const Navbar = () => {
                 <NavLink className="nav-link" to="/contact" onClick={()=>{setShow(false)}}>Contact</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/donate" onClick={()=>{setShow(false)}}>donate</NavLink>
+                <NavLink className="nav-link" to="/donate" onClick={()=>{setShow(false)}}>Donate</NavLink>
               </li>
             </ul>
           </div>

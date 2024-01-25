@@ -7,27 +7,41 @@ const Footer = () => {
   return (
     <footer>
         <div className="container-fluid">
-            <div className="row">
-                <div className="footer-details col-md-6">
-                    <Link to="#" className="logo" ><img src={require("../icons/letter-m.png")} alt="logo" className="logo-img" /></Link>
-                    <div className="detail">
-                        <h5>Address: </h5>
-                        <p>7869, Lugbe, Abuja, Nigeria</p>
+            <div className="row justify-content-center">
+                <div className="col-md-6 col-lg-7">
+                    <div className="row links">
+                        <div className="link-category col-6 col-lg-4">
+                            <h5>Organization</h5>
+                            <Link href="./about-us">About Us</Link>
+                            <Link href="./about-us">Faith Statement</Link>
+                            <Link href="./about-us">Contact Us</Link>
+                        </div>
+                        <div className="link-category col-6 col-lg-4">
+                            <h5>Services</h5>
+                            <Link href="./about-us">Medical Outreach</Link>
+                            <Link href="./about-us">Medical Care</Link>
+                            <Link href="./about-us">Spiritual Counseling</Link>
+                        </div>
+                        <div className="link-category col-6 col-lg-4">
+                            <h5>Contact</h5>
+                            <Link href="./about-us">Home</Link>
+                            <Link href="./about-us">Join Us</Link>
+                            <Link href="./about-us">Contact</Link>
+                        </div>
                     </div>
-                    <div className="detail">
-                        <h5>Phone: </h5>
-                        <Link to="tel:+2348036778249">+2348036778249</Link>
-                    </div>
-                    <div className="detail">
-                        <h5>Email: </h5>
-                        <Link to="mailto:contact@michgidglobal@gmail.com">contact@michgidglobal@gmail.com</Link>
-                    </div>
-            
-                
                 </div>
-                <div className="footer-content col-md-6">                    
+                <div className="footer-content col-md-6 col-lg-5">                    
+                    
+                    <form action="">
+                        <h5>Newsletter: </h5>
+                        <div className="form-container">
+                            <input type="email" name="" id="" placeholder="Your email here" />
+                            <button type="submit" className="page-btn">Subscribe</button>
+                        </div>
+                        
+                    </form>
+
                     <div className="media-links mb-5">
-                        <h5>Socials: </h5>
                         <div className="links">
                             <Link to="#">
                                 <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
@@ -42,17 +56,14 @@ const Footer = () => {
                                 <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
                             </Link>
                         </div>
+
                     </div>
-                    <form action="">
-                        <h5>Newsletter: </h5>
-                        <input type="email" name="" id="" placeholder="Your email here"/>
-                        <button type="submit" className="page-btn-2">Subscribe</button>
-                    </form>
                 </div>
             
                 <div className="copy-right mt-3">
-                    <p>Michgid Global Resources Ltd. &copy; 2023, All RIghts Reserved.</p>
-                    <Link to="" className="">Contact Us</Link>
+                    <Link to="#" className="logo" ><img src={require("../imgs/grace-medical/g-icon.png")} alt="logo" className="logo-img" /></Link>
+
+                    <p>Grace Medical Outreach Intl. &copy; 2023, All RIghts Reserved.</p>
                 </div>
                 
         </div>
