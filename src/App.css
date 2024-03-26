@@ -167,7 +167,7 @@ section {
 
 .page-btn-2 {
     padding: 8px 32px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid var(--cl--4--);
     font-weight: 500;
     color: var(--cl--4--);
@@ -746,10 +746,28 @@ section {
 /* give */
 
 .give .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./imgs/grace-medical/45.JPG");
-    background-position: 40% 35%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("./imgs/grace-medical/4.JPG");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.give .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
 
 }
+
+.give .content *{
+    color: var(--cl--1--);
+    text-align: center;
+}
+
 
 /* End give */
 
@@ -1029,6 +1047,10 @@ footer .page-btn:hover {
         color: var(--cl--3--);
         text-align: center;
     }
+
+    .give .banner {
+        height: 100vh;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1092,7 +1114,11 @@ footer .page-btn:hover {
 
 
     .banner {
-        height: 40vh;
+        height: 50vh;
+    }
+
+    .give .banner {
+        height: 70vh;
     }
 
 
@@ -1137,6 +1163,10 @@ footer .page-btn:hover {
 
     .banner {
         height: 50vh;
+    }
+
+    .give .banner {
+        height: 100vh;
     }
 
     .home-about-us .page-btn-2 {
