@@ -40,7 +40,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`navbar navbar-expand-md fixed-top ${scrolled ? 'scrolled bg-light': 'navbar-dark'}`}>
+    <nav className={`navbar navbar-expand-md fixed-top ${scrolled ? 'scrolled bg-dark navbar-dark': 'navbar-dark'}`}>
       <div className="container-fluid">
         <Link className="navbar-brand logo" to="/" onClick={() => setShow(false)}><img src={require("../imgs/grace-medical/g-icon.png")} alt="" /></Link>
         <button className="navbar-toggler" type="button" onClick={toggleShow}>

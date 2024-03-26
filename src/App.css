@@ -29,9 +29,13 @@ body {
     --cl--7--: #EEEEEE;
 
 
-    --nav-height: 70px;
+    --nav-height: 60px;
     background: var(--cl--1--);
     margin: 0;
+}
+
+.app {
+    position: relative;
 }
 
 img {
@@ -190,7 +194,8 @@ section {
     font-family: Poppins;
     margin: auto;
     z-index: 100;
-    padding: 10px;
+    padding: 0;
+    height: var(--nav-height);
 }
 
 
@@ -226,12 +231,7 @@ section {
 }
 
 
-.navbar .navbar-collapse {
-    padding-top: 30px;
-    width: 90vw;
-    height: 100vh;
 
-}
 
 .navbar .navbar-collapse .navbar-nav {
     gap: 30px;
@@ -412,6 +412,10 @@ section {
     flex-direction: column;
 }
 
+.home-about-us .content img{
+    border-radius: 3px;
+}
+
 
 
 
@@ -428,11 +432,15 @@ section {
 
 .home-about-us .header-image img {
     height: 100%;
+    border-radius: 8px;
 }
 
 .home-about-us .header-image .img-wrapper:first-child {
     border-right: 10px solid var(--cl--1--);
     border-top: 10px solid var(--cl--1--);
+    border-radius: 8px;
+    overflow: hidden;
+
 }
 
 
@@ -441,6 +449,8 @@ section {
     right: 0;
     top: -45px;
     z-index: -1;
+    overflow: hidden;
+
 }
 
 .home-about-us .page-btn-2 {
@@ -992,15 +1002,41 @@ footer .page-btn:hover {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        
+        height: 100vh;
+        width: 45vw;
+        background-color: #1A1A1A;
+        transition: all 0.5s ease-in;
+    }
+
+    .navbar  .give-btn{
+        margin-top: 20px;
+        border: 2px solid var(--cl--3--);
+        padding: 3px 20px;
+        border-radius: 5px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar  .give-btn .nav-link{
+        color: var(--cl--3--);
+        text-align: center;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .container-fluid {
         width: 90%;
     }
 
-    .navbar {
-        height: var(--nav-height);
-    }
+    
 
     .navbar .navbar-collapse {
         position: static;

@@ -17,7 +17,7 @@ function App() {
 
 
   return (
-    <>
+    <div className='app'>
     <HashRouter>
       <Navbar  />
       <ScrollToTop />
@@ -35,7 +35,7 @@ function App() {
       </div>
       <Footer />
     </HashRouter>
-    </>
+    </div>
   );
 }
 
