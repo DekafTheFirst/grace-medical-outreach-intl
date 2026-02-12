@@ -39,11 +39,13 @@ const Give = () => {
                     <h1>DONATE TO GRACE MEDICAL OUTREACH INTERNATIONAL</h1>
                     <p>Your generous contribution empowers us to mobilize and equip our dedicated team, enabling us to maximize our impact in spreading the message of Calvary. </p>
                     <h2>BANK ACCOUNT INFO:</h2>
+                    <h2>4110069925</h2>
+                    <h2>Fidelity Bank</h2>
                     {/* <div className="naira">
                         <h3>Naira:</h3>
                         <p></p>
                     </div> */}
-                    <FlutterWaveButton className='page-btn' {...fwConfig} />
+                    {/* <FlutterWaveButton className='page-btn' {...fwConfig} /> */}
 
                 </div>
             </div>
