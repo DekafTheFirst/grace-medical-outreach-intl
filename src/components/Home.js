@@ -245,18 +245,18 @@ const Home = () => {
               modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
               className="mySwiper"
             >
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/1.jpg')} /></SwiperSlide>
-              {/* <SwiperSlide><img src={require('../imgs/grace-medical/slider/2.jpg')} /></SwiperSlide> */}
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/3.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/4.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/5.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/6.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/7.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/8.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/9.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/10.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/11.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/12.jpg')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/1.JPG')} /></SwiperSlide>
+              {/* <SwiperSlide><img src={require('../imgs/grace-medical/slider/2.JPG')} /></SwiperSlide> */}
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/3.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/4.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/5.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/6.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/7.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/8.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/9.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/10.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/11.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/12.JPG')} /></SwiperSlide>
 
             </Swiper>
             <div className="swiper-custom-pagination"></div>
