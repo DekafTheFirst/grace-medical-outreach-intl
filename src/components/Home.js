@@ -250,13 +250,13 @@ const Home = () => {
               <SwiperSlide><img src={require('../imgs/grace-medical/slider/3.jpg')} /></SwiperSlide>
               <SwiperSlide><img src={require('../imgs/grace-medical/slider/4.jpg')} /></SwiperSlide>
               <SwiperSlide><img src={require('../imgs/grace-medical/slider/5.jpg')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/6.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/7.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/8.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/9.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/10.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/11.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/12.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/6.jpg')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/7.jpg')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/8.jpg')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/9.jpg')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/10.jpg')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/11.jpg')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/grace-medical/slider/12.jpg')} /></SwiperSlide>
 
             </Swiper>
             <div className="swiper-custom-pagination"></div>
