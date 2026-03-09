@@ -55,7 +55,19 @@ const AboutUs = () => {
         },
     ];
 
-
+    const departments = [
+  { name: "Secretariat", icon: "business_center" },
+  { name: "Pharmacy", icon: "local_pharmacy" },
+  { name: "Laboratory", icon: "science" },
+  { name: "Dental", icon: "medical_services" },
+  { name: "Clinics", icon: "local_hospital" },
+  { name: "Eye Clinics", icon: "visibility" },
+  { name: "Surgical", icon: "healing" },
+  { name: "Pediatric", icon: "child_care" },
+  { name: "Media / ICT / Public Relations", icon: "campaign" },
+  { name: "Counselling", icon: "psychology" },
+  { name: "Prayers", icon: "self_improvement" }
+];
     return (
         <div className='page about-us'>
             <div className='banner'>
@@ -225,6 +237,32 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
+
+
+                <section className="departments">
+                    <div className="container d-flex flex-column align-items-center">
+                        <h2 className="text-center">Departments</h2>
+
+                        <p className="text-center" style={{ maxWidth: 730, fontSize: 13 }}>
+                            Explore the departments that help drive our mission forward through
+                            service, care, and impact.
+                        </p>
+
+                        <div className="d-flex flex-wrap gap-4 p-3 mt-3 justify-content-center">
+                            {departments.map((department, index) => (
+                                <div className="department-card" key={index}>
+
+                                    <span className="material-icons department-icon">
+                                        {department.icon}
+                                    </span>
+
+                                    <h5 className="department-name">{department.name}</h5>
+
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
 
 
                 <h2 className='text-center mt-5'>Meet The Team</h2>
