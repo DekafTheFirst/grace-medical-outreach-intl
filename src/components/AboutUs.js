@@ -1,9 +1,60 @@
-import React, {  } from 'react'
+import React, { } from 'react'
 import { Link } from 'react-router-dom'
 import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const AboutUs = () => {
+    const team = [
+        {
+            name: "Dr Kefas Jibir, MBBS, FWACP",
+            role: "Chairman",
+            photo: require("../imgs/people/kefas-jibir.png"),
+            badge: require("../imgs/grace-medical/chairman.png"),
+        },
+        {
+            name: "Pharm Emmanuel Adaji",
+            role: "General Secretary",
+            photo: require("../imgs/people/adaji.png"),
+            badge: require("../imgs/grace-medical/secretary.png"),
+        },
+        {
+            name: "Pharm Toyin Bada",
+            role: "HOD Pharmacy/Treasurer",
+            photo: require("../imgs/grace-medical/person.png"),
+            badge: require("../imgs/grace-medical/drugs.png"),
+        },
+        {
+            name: "Pst Davidson Iheanyichukwu",
+            role: "HOD Counselling",
+            photo: require("../imgs/people/davison.png"),
+            badge: require("../imgs/grace-medical/counseling.png"),
+        },
+        {
+            name: "Pst Tukura James",
+            role: "HOD Prayers",
+            photo: require("../imgs/people/tukura.png"),
+            badge: require("../imgs/grace-medical/prayer.png"),
+        },
+        {
+            name: "Engr Peter Echiye (MCPN)",
+            role: "HOD Media/IT/Public Relation",
+            photo: require("../imgs/people/peter.png"),
+            badge: require("../imgs/grace-medical/it-department.png"),
+        },
+        {
+            name: "Moses Ogebe",
+            role: "HOD Planning/Mobilization",
+            photo: require("../imgs/people/moses.png"),
+            badge: require("../imgs/grace-medical/planning.png"),
+        },
+        {
+            name: "Bar Emeka Alioha",
+            role: "Legal Adviser",
+            photo: require("../imgs/grace-medical/person.png"),
+            badge: require("../imgs/grace-medical/legal.png"),
+        },
+    ];
+
 
     return (
         <div className='page about-us'>
@@ -20,7 +71,7 @@ const AboutUs = () => {
             </div>
 
 
-            <section className="container-fluid">
+            <section className="container-fluid items">
                 <div className="row">
                     <div className="col-12 col-md-6">
                         <h2 className='heading'>Our Story</h2>
@@ -145,242 +196,39 @@ const AboutUs = () => {
                 </div>
 
 
-                {/* <div className="row our-team">
-                <h6 className='section-heading'>Our Team</h6>
-                <h2>Meet the EXCOS</h2>
-                <div className="wrapper">
-                    <div className="cards">
-                        <div className="card">
-                            <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/people/kefas-jibir.png')} alt="board of directors image"/>
-                            </div>
-                            <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/chairman.png")} alt="" /></div>
-                                <div className="content">
-                                    <span className='name'>Dr Kefas Jibir, MBBS, FWACP</span>
-                                    <h5>Chairman</h5>
-                                </div>
-                                <div className="media-links">
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
-                                    </Link>
-                                </div>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
-                            </div>
-                            <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/secretary.png")} alt="" /></div>
-                                <div className="content">
-                                    <span className='name'>Pharm Emmanuel Adaji</span>
-                                    <h5>General Secretary</h5>
-                                </div>
-                                <div className="media-links">
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
-                                    </Link>
-                                </div>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
-                            </div>
-                            <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/drugs.png")} alt="" /></div>
-                                <div className="content">
-                                    <span className='name'>Pharm Toyin Bada</span>
-                                    <h5>HOD Pharmacy/Treasurer</h5>
-                                </div>
-                                <div className="media-links">
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
-                                    </Link>
-                                </div>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
-                            </div>
-                            <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/counseling.png")} alt="" /></div>
-                                <div className="content">
-                                    <span className='name'>Pst Davidson Iheanyichukwu</span>
-                                    <h5>HOD Counselling</h5>
-                                </div>
-                                <div className="media-links">
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
-                                    </Link>
-                                </div>
-                                <p></p>
-                            </div>
-                        </div>
+                <div className="row our-team">
+                    <h6 className="section-heading">Our Team</h6>
+                    <h2>Meet the EXCOS</h2>
 
+                    <div className="wrapper">
+                        <div className="cards">
+                            {team.map((person) => (
+                                <div className="card" key={`${person.name}-${person.role}`}>
+                                    <div className="img-wrapper">
+                                        <img className="card-img" src={person.photo} alt={person.name} />
+                                    </div>
 
-                        <div className="card">
-                            <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
-                            </div>
-                            <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/prayer.png")} alt="" /></div>
-                                <div className="content">
-                                    <span className='name'>Pst Tukura James</span>
-                                    <h5>HOD Prayers</h5>
+                                    <div className="card-body">
+                                        {/* <div className="logo">
+                                            <img src={person.badge} alt={`${person.role} icon`} />
+                                        </div> */}
+
+                                        <div className="content">
+                                            <span className="name">{person.name}</span>
+                                            <h6>{person.role}</h6>
+                                        </div>
+
+                                        <p></p>
+                                    </div>
                                 </div>
-                                <div className="media-links">
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
-                                    </Link>
-                                </div>
-                                <p></p>
-                            </div>
+                            ))}
                         </div>
-
-                        <div className="card">
-                            <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
-                            </div>
-                            <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/it-department.png")} alt="" /></div>
-                                <div className="content">
-                                    <span className='name'>Engr Peter Echiye(MCPN)</span>
-                                    <h5>HOD Media/IT/Public Relation</h5>
-                                </div>
-                                <div className="media-links">
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
-                                    </Link>
-                                </div>
-                                <p></p>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
-                            </div>
-                            <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/planning.png")} alt="" /></div>
-                                <div className="content">
-                                    <span className='name'>Moses Ogebe</span>
-                                    <h5>HOD Planning/Mobilization</h5>
-                                </div>
-                                <div className="media-links">
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
-                                    </Link>
-                                </div>
-                                <p></p>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
-                            </div>
-                            <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/legal.png")} alt="" /></div>
-                                <div className="content">
-                                    <span className='name'>Bar Emeka Alioha</span>
-                                    <h5>Legal Adviser</h5>
-                                </div>
-                                <div className="media-links">
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
-                                    </Link>
-                                    <Link to="#">
-                                        <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
-                                    </Link>
-                                </div>
-                                <p></p>
-                            </div>
-                        </div>
-
-
-                        
                     </div>
                 </div>
 
-                                
-            </div> */}
-                <h2 className='text-center'>Meet The Team</h2>
-                
+
+                <h2 className='text-center mt-5'>Meet The Team</h2>
+
                 <div className="row justify-content-center g-5">
                     <img src={require('../imgs/grace-medical/45.JPG')} alt="" />
 

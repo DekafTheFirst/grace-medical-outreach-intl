@@ -11,6 +11,7 @@ import Missions from './components/Missions';
 import JoinUs from './components/JoinUs';
 import ScrollToTop from './components/ScrollToTop';
 import Give from './components/Give';
+import Videos from './components/Videos';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/about-us" element={<AboutUs/>}/>
             <Route path="/missions" element={<Missions/>}/>     
-            <Route path="/join-us" element={<JoinUs />}/>
+            <Route path="/videos" element={<Videos/>}/>     
             <Route path="/contact" element={<Contact />}/>
             <Route path="/give" element={<Give />}/>
 

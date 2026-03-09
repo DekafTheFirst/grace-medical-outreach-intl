@@ -60,17 +60,23 @@ const Navbar = () => {
               <NavLink to="/missions" className="nav-link" onClick={() => { setShow(false) }}>Missions</NavLink>
             </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/join-us" onClick={() => { setShow(false) }}>Join Us</NavLink>
+             <li className="nav-item">
+              <a href="https://www.youtube.com/@GraceMedicalOutreachIntl"  target="_blank"
+               rel="noopener noreferrer" className="nav-link" onClick={() => { setShow(false) }}>Videos</a>
             </li>
+
+            {/* <li className="nav-item">
+              <NavLink className="nav-link" to="/join-us" onClick={() => { setShow(false) }}>Join Us</NavLink>
+            </li> */}
+
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact" onClick={() => { setShow(false) }}>Contact</NavLink>
             </li>
 
           </ul>
-          <li className="nav-item give-btn">
-            <NavLink className="nav-link" to="/give" onClick={() => { setShow(false) }}>Give</NavLink>
-          </li>
+          <NavLink to="/give" className="nav-item give-btn">
+            <li className="nav-link"  onClick={() => { setShow(false) }}>Give</li>
+          </NavLink>
         </div>
 
       </div>

@@ -168,8 +168,8 @@ section {
 .page-btn-2 {
     padding: 8px 32px;
     border-radius: 5px;
-    border: 2px solid var(--cl--4--);
-    font-weight: 500;
+    border: 1px solid var(--cl--4--);
+    font-weight: 600;
     color: var(--cl--4--);
     margin-right: auto;
 }
@@ -288,8 +288,15 @@ section {
 
 }
 
-.navbar .nav-link.active,
-.navbar .nav-link:hover {}
+
+.navbar .nav-link:hover {
+    color:  #6e776e;
+}
+
+.navbar .nav-link.active {
+        color:  #4eba53;
+
+}
 
 .navbar .nav-item {
     display: flex;
@@ -319,7 +326,7 @@ section {
 .hero .hero-content {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     max-width: 700px;
 }
 
@@ -381,9 +388,10 @@ section {
 }
 
 .reputation .card {
-    height: 400px;
+    height: 360px;
     flex-basis: 300px;
     border: none;
+    border-radius: 18px;
     background-color: var(--cl--2--);
     align-items: center;
     justify-content: center;
@@ -398,6 +406,7 @@ section {
 
 .reputation .card p {
     text-align: center;
+    font-size: 14px;
 }
 
 
@@ -436,8 +445,8 @@ section {
 }
 
 .home-about-us .header-image .img-wrapper:first-child {
-    border-right: 10px solid var(--cl--1--);
-    border-top: 10px solid var(--cl--1--);
+    border-right: 7px solid var(--cl--1--);
+    border-top: 7px solid var(--cl--1--);
     border-radius: 8px;
     overflow: hidden;
 
@@ -504,7 +513,12 @@ section {
 .services .card-btn {
     margin-right: auto;
     margin-top: auto;
+    font-size: 14px;
 
+}
+
+.services .card-text{
+    font-size: 14px;
 }
 
 
@@ -559,6 +573,10 @@ section {
     flex-direction: row-reverse;
 }
 
+
+.about-us .items img {
+    border-radius: 40px;
+}
 
 
 
@@ -616,7 +634,7 @@ section {
 
 .about-us .our-team .card {
     width: 300px;
-    height: 470px;
+    height: 400px;
     background-color: var(--cl--4--);
     overflow: hidden;
     border: none;
@@ -632,7 +650,7 @@ section {
 }
 
 .about-us .our-team .card .card-img {
-    height: 220px;
+    height: 280px;
     object-fit: cover;
     object-position: top;
     border-radius: 0;
@@ -664,7 +682,7 @@ section {
 }
 
 .about-us .our-team .card .content {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -674,6 +692,7 @@ section {
     border-bottom: 3px solid var(--cl--2--);
     width: fit-content;
     padding-bottom: 8px;
+    font-size: 14px;
 }
 
 
@@ -875,6 +894,7 @@ footer .link-category {
 footer .link-category a {
     color: var(--cl--2--);
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 footer .link-category a:hover {
