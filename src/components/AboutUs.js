@@ -20,7 +20,7 @@ const AboutUs = () => {
         {
             name: "Pharm Toyin Bada",
             role: "HOD Pharmacy/Treasurer",
-            photo: require("../imgs/grace-medical/person.png"),
+            photo: require("../imgs/people/toyin-bada.png"),
             badge: require("../imgs/grace-medical/drugs.png"),
         },
         {
@@ -60,7 +60,7 @@ const AboutUs = () => {
   { name: "Pharmacy", icon: "local_pharmacy" },
   { name: "Laboratory", icon: "science" },
   { name: "Dental", icon: "medical_services" },
-  { name: "Clinics", icon: "local_hospital" },
+  { name: "Welfare", icon: "volunteer_activism" },
   { name: "Eye Clinics", icon: "visibility" },
   { name: "Surgical", icon: "healing" },
   { name: "Pediatric", icon: "child_care" },
